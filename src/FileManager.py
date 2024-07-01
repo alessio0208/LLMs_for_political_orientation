@@ -20,6 +20,9 @@ class FileManager:
         # Create a dictionary with base filenames (excluding extensions) as keys and full filenames as values
         files_input_base = {os.path.splitext(file)[0].split('_')[0]: file for file in input_files}
         
+        # Ensure the output directory exists
+        os.makedirs(output_path, exist_ok=True)
+        
         # Create a set of base filenames (excluding extensions) in the output directory
         files_output_base = {os.path.splitext(file)[0].split('_')[0] for file in os.listdir(output_path)}
 
@@ -40,6 +43,9 @@ class FileManager:
         output_path (str): Path to the directory where the file will be saved.
         df (pd.DataFrame): DataFrame to be saved as a CSV file.
         """
+        # Ensure the output directory exists
+        os.makedirs(output_path, exist_ok=True)
+        
         # Extract the date part from the input filename
         date_part = input_filename.split('_')[0]
         
