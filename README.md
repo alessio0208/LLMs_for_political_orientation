@@ -9,7 +9,7 @@ This project provides a set of tools to scrape, clean, and analyze news articles
 - Evaluate articles based on economic and political scales using different language models
 
 ## Data
-The directory 'output' already contains the dataset extracted and analyzed in the paper "Large Language Models’ Detection of Political Orientation in Newspapers" by Alessio Buscemi and Daniele Proverbio, 2024, https://arxiv.org/pdf/2406.00018
+The directory 'output/evaluations' already contains the dataset extracted and analyzed in the paper "Large Language Models’ Detection of Political Orientation in Newspapers" by Alessio Buscemi and Daniele Proverbio, 2024, https://arxiv.org/pdf/2406.00018
 
 ## Remarks
 - To use OpenAI's GPTs and Google's Gemini models, you must update the relevant scripts with your own API keys.
@@ -19,5 +19,5 @@ To set up the project locally, clone the repository and install the required dep
 
 ```bash
 git clone https://github.com/alessio0208/LLMs_for_political_orientation.git
-cd LLMs_for_political_orientation.git
+cd LLMs_for_political_orientation
 pip install -r requirements.txt
